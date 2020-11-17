@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\janwe\Documents\BookingSystem\WesAlipio.BookingSystem.Windows\obj\Debug\
+C:\Users\admin\OneDrive\Documents\BookingSystem\WesAlipio.BookingSystem.Windows\obj\Debug\
 WesAlipio.BookingSystem.Windows
 none
 false
 DEBUG;TRACE
-C:\Users\janwe\Documents\BookingSystem\WesAlipio.BookingSystem.Windows\App.xaml
-11151548125
+C:\Users\admin\OneDrive\Documents\BookingSystem\WesAlipio.BookingSystem.Windows\App.xaml
+51643020880
 
-121979646124
-26124811109
-MainWindow.xaml;
+20-1970021510
+26-2133444271
+Customers\CustomerAdd.xaml;Customers\CustomerList.xaml;MainWindow.xaml;Reservations\ReservationsList.xaml;Rooms\RoomList.xaml;
 
 False
 

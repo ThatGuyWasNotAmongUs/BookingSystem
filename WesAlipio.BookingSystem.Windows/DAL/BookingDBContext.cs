@@ -14,7 +14,6 @@ namespace WesAlipio.BookingSystem.Windows.DAL
         {
             Database.SetInitializer(new WesAlipio.BookingSystem.Windows.DAL.DataInitializer());
         }
-        public DbSet<Billing> Billings {get; set;}
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
         public DbSet<Room> Rooms { get; set; }
