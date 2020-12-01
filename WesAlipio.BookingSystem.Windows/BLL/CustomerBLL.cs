@@ -12,7 +12,7 @@ namespace WesAlipio.BookingSystem.Windows.BLL
     {
         private static BookingDBContext db = new BookingDBContext();
 
-        public static Paged<Models.Customer> Search(int pageIndex = 1, int pageSize = 1, string sortBy = "lastname", string sortOrder = "asc", string keyword = "")
+        public static Paged<Models.Customer> Search(int pageIndex = 1, int pageSize = 5, string sortBy = "lastname", string sortOrder = "asc", string keyword = "")
         {
             IQueryable<Customer> allCustomers = (IQueryable<Customer>)db.Customers;
             Paged<Models.Customer> customers = new Paged<Customer>();
@@ -24,14 +24,14 @@ namespace WesAlipio.BookingSystem.Windows.BLL
 
             var queryCount = allCustomers.Count();
             var skip = pageSize * (pageIndex - 1);
-
+                
             long pageCount = (long)Math.Ceiling((decimal)(queryCount / pageSize));
 
             if (sortBy.ToLower() == "firstname" && sortOrder.ToLower() == "asc")
             {
                 customers.Items = allCustomers.OrderBy(e => e.FirstName).Skip(skip).Take(pageSize).ToList();
             }
-            else if (sortBy.ToLower() == "firstname" && sortOrder.  ToLower() == "desc")
+            else if (sortBy.ToLower() == "firstname" && sortOrder.ToLower() == "desc")
             {
                 customers.Items = allCustomers.OrderByDescending(e => e.FirstName).Skip(skip).Take(pageSize).ToList();
             }

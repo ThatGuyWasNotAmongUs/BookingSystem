@@ -14,16 +14,16 @@ using System.Windows.Shapes;
 using WesAlipio.BookingSystem.Windows.BLL;
 using WesAlipio.BookingSystem.Windows.Models;
 
-
-namespace WesAlipio.BookingSystem.Windows.Customers
+namespace WesAlipio.BookingSystem.Windows.Rooms
 {
     /// <summary>
-    /// Interaction logic for CustomerAdd.xaml
+    /// Interaction logic for RoomAdd.xaml
     /// </summary>
-    public partial class CustomerAdd : Window
+    public partial class RoomAdd : Window
     {
-        CustomerList myParentWindow = new CustomerList();
-        public CustomerAdd(CustomerList parentWindow)
+        RoomList myParentWindow = new RoomList();
+
+        public RoomAdd(RoomList parentWindow)
         {
             InitializeComponent();
             myParentWindow = parentWindow;
@@ -36,14 +36,14 @@ namespace WesAlipio.BookingSystem.Windows.Customers
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            var op = CustomerBLL.Add(new Customer()
-            {
-                Id = Guid.NewGuid(),
-                FirstName = txtFirstName.Text,
-                LastName = txtLastName.Text,
-                EmailAddress = txtEmailAddress.Text,
-                ContactNumber = txtMobileNumber.Text,
-                HomeAddress = txtHomeAddress.Text
+
+            var op = RoomBLL.Add(new Room()
+            { 
+               Availaibility = Models.Enums.Availability.Available,
+               RoomNumber = txtRoomNumber.Text,
+               RoomDescription = txtDesc.Text,
+               Occupants = txtOccupants.Text,
+               Pricing = int.Parse(txtPrice.Text)
 
             });
 

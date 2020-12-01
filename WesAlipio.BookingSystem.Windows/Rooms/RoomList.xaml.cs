@@ -36,7 +36,7 @@ namespace WesAlipio.BookingSystem.Windows.Rooms
             showData();
         }
 
-        private void showData()
+        public void showData()
         {
             var rooms = RoomBLL.Search(pageIndex, pageSize, sortBy, sortOrder, keyword);
 
@@ -112,6 +112,12 @@ namespace WesAlipio.BookingSystem.Windows.Rooms
         {
             sortBy = cboSortBy.SelectedValue.ToString();
             showData();
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            RoomAdd addWindow = new RoomAdd(this);
+            addWindow.Show();
         }
     }
 }

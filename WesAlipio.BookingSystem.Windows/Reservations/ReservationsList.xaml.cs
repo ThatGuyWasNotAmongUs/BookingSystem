@@ -113,6 +113,12 @@ namespace WesAlipio.BookingSystem.Windows.Reservations
             sortBy = cboSortBy.SelectedValue.ToString();
             showData();
         }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            ReservationAdd addWindow = new ReservationAdd(this);
+            addWindow.Show();
+        }
     }
 }
 

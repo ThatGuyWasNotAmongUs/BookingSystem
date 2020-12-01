@@ -48,5 +48,27 @@ namespace WesAlipio.BookingSystem.Windows.BLL
 
             return rooms;
         }
+        public static Operation Add(Room room)
+        {
+            try
+            {
+                db.Rooms.Add(room);
+                db.SaveChanges();
+
+                return new Operation()
+                {
+                    Code = "200",
+                    Message = "Ok",
+                };
+            }
+            catch (Exception e)
+            {
+                return new Operation()
+                {
+                    Code = "500",
+                    Message = e.Message
+                };
+            }
+        }
     }
 }

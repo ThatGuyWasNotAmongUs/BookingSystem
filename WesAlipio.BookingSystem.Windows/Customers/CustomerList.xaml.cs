@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WesAlipio.BookingSystem.Windows.BLL;
-using WesAlipio.BookingSystem.Windows.Helpers;
+
 
 namespace WesAlipio.BookingSystem.Windows.Customers
 {
@@ -25,9 +25,9 @@ namespace WesAlipio.BookingSystem.Windows.Customers
         private string sortBy = "lastname";
         private string sortOrder = "asc";
         private string keyword = "";
-        private int pageSize;
+        private int pageSize = 5;
         private int pageIndex = 1;
-        private long pageCount;
+        private long pageCount = 1;
         public CustomerList()
         
         
@@ -51,9 +51,10 @@ namespace WesAlipio.BookingSystem.Windows.Customers
             if (txtPageSize.Text.Length > 0)
             {
                 int.TryParse(txtPageSize.Text, out pageSize);
+                showData();
             }
 
-            showData();
+            
         }
 
         private void btnLast_Click(object sender, RoutedEventArgs e)

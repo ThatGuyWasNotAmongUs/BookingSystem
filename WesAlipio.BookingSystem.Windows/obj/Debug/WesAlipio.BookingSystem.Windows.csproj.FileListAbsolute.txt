@@ -54,3 +54,7 @@ C:\Users\admin\OneDrive\Documents\BookingSystem\WesAlipio.BookingSystem.Windows\
 C:\Users\admin\OneDrive\Documents\BookingSystem\WesAlipio.BookingSystem.Windows\obj\Debug\Reservations\ReservationsList.baml
 C:\Users\admin\OneDrive\Documents\BookingSystem\WesAlipio.BookingSystem.Windows\obj\Debug\Customers\CustomerAdd.g.cs
 C:\Users\admin\OneDrive\Documents\BookingSystem\WesAlipio.BookingSystem.Windows\obj\Debug\Customers\CustomerAdd.baml
+C:\Users\admin\OneDrive\Documents\BookingSystem\WesAlipio.BookingSystem.Windows\obj\Debug\Reservations\ReservationAdd.g.cs
+C:\Users\admin\OneDrive\Documents\BookingSystem\WesAlipio.BookingSystem.Windows\obj\Debug\Rooms\RoomAdd.g.cs
+C:\Users\admin\OneDrive\Documents\BookingSystem\WesAlipio.BookingSystem.Windows\obj\Debug\Reservations\ReservationAdd.baml
+C:\Users\admin\OneDrive\Documents\BookingSystem\WesAlipio.BookingSystem.Windows\obj\Debug\Rooms\RoomAdd.baml

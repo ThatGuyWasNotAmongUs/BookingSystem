@@ -20,6 +20,7 @@
         <ComboBox x:Name="cboSortOrder" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="10,156,0,0" SelectionChanged="cboSortOrder_SelectionChanged"/>
         <Label x:Name="lblSortBy" Content="Sort By:" HorizontalAlignment="Left" Height="24" Margin="10,74,0,0" VerticalAlignment="Top" Width="84"/>
         <Label x:Name="lblSortOrder" Content="Sort Order:" HorizontalAlignment="Left" Height="24" Margin="10,127,0,0" VerticalAlignment="Top" Width="84"/>
+        <Button x:Name="btnAdd" Content="Add New" HorizontalAlignment="Left" Height="27" Margin="687,5,0,0" VerticalAlignment="Top" Width="84" Click="btnAdd_Click"/>
 
     </Grid>
 </Window>

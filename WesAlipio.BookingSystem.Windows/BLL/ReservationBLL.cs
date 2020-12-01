@@ -48,5 +48,28 @@ namespace WesAlipio.BookingSystem.Windows.BLL
 
             return reservations;
         }
+        public static Operation Add(Reservation reservation)
+        {
+            try
+            {
+                db.Reservations.Add(reservation);
+                db.SaveChanges();
+
+                return new Operation()
+                {
+                    Code = "200",
+                    Message = "Ok",
+                    ReferenceId = reservation.ReservationID
+                };
+            }
+            catch (Exception e)
+            {
+                return new Operation()
+                {
+                    Code = "500",
+                    Message = e.Message
+                };
+            }
+        }
     }
 }
