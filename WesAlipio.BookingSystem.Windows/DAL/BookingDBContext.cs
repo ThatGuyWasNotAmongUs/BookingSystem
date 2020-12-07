@@ -12,7 +12,7 @@ namespace WesAlipio.BookingSystem.Windows.DAL
     {
         public BookingDBContext() : base("myConnectionString")
         {
-            Database.SetInitializer(new WesAlipio.BookingSystem.Windows.DAL.DataInitializer());
+            //Database.SetInitializer(new WesAlipio.BookingSystem.Windows.DAL.DataInitializer());
         }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Reservation> Reservations { get; set; }

@@ -82,6 +82,9 @@
     <Compile Include="Customers\CustomerAdd.xaml.cs">
       <DependentUpon>CustomerAdd.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Customers\CustomerUpdate.xaml.cs">
+      <DependentUpon>CustomerUpdate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\Operation.cs" />
     <Compile Include="Reservations\ReservationAdd.xaml.cs">
       <DependentUpon>ReservationAdd.xaml</DependentUpon>
@@ -100,6 +103,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Customers\CustomerList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Customers\CustomerUpdate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

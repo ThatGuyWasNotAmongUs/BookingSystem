@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\admin\OneDrive\Documents\BookingSystem\WesAlipio.BookingSystem.Windows\App.xaml
-7-1440902175
+8-1303752457
 
-231392364725
+24-1830712075
 26-2133444271
-Customers\CustomerAdd.xaml;Customers\CustomerList.xaml;MainWindow.xaml;Reservations\ReservationAdd.xaml;Reservations\ReservationsList.xaml;Rooms\RoomAdd.xaml;Rooms\RoomList.xaml;
+Customers\CustomerAdd.xaml;Customers\CustomerList.xaml;Customers\CustomerUpdate.xaml;MainWindow.xaml;Reservations\ReservationAdd.xaml;Reservations\ReservationsList.xaml;Rooms\RoomAdd.xaml;Rooms\RoomList.xaml;
 
-False
+True
 

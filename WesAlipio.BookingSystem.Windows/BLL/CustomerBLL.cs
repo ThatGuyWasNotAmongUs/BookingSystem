@@ -75,6 +75,49 @@ namespace WesAlipio.BookingSystem.Windows.BLL
                 };
             }
         }
+
+        public static Operation Update(Customer newRecord)
+        {
+            try
+            {
+                Customer oldRecord = db.Customers.FirstOrDefault(e => e.Id == newRecord.Id);
+
+                if (oldRecord != null)
+                {
+
+                    oldRecord.EmailAddress = newRecord.EmailAddress;
+                    oldRecord.FirstName = newRecord.FirstName;
+                    oldRecord.LastName = newRecord.LastName;
+                    oldRecord.ContactNumber = newRecord.ContactNumber;
+                    oldRecord.HomeAddress = newRecord.HomeAddress;
+                    
+
+
+                    db.SaveChanges();
+
+                    return new Operation()
+                    {
+                        Code = "200",
+                        Message = "OK"
+                    };
+                }
+
+
+                return new Operation()
+                {
+                    Code = "500",
+                    Message = "Not found"
+                };
+            }
+            catch (Exception e)
+            {
+                return new Operation()
+                {
+                    Code = "500",
+                    Message = e.Message
+                };
+            }
+        }
     }
 
 

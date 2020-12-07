@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WesAlipio.BookingSystem.Windows.BLL;
+using WesAlipio.BookingSystem.Windows.Models;
 
 
 namespace WesAlipio.BookingSystem.Windows.Customers
@@ -121,6 +122,12 @@ namespace WesAlipio.BookingSystem.Windows.Customers
         {
             CustomerAdd addWindow = new Customers.CustomerAdd(this);
             addWindow.Show();
+        }
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            Customer customer = ((FrameworkElement)sender).DataContext as Customer;
+            CustomerUpdate updateForm = new CustomerUpdate(customer, this);
+            updateForm.Show();
         }
     }
 }
